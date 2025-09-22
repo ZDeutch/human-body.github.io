@@ -1,6 +1,10 @@
-# Human Body Physiological States Visualization
+# 🫀 Human Body Physiological States Visualization
 
 An interactive web application that models the human body during homeostasis and marathon running, showing real-time physiological changes and system responses.
+
+**🌐 [Live Demo](https://ZDeutch.github.io/human-body-physiology)** | **📚 [Deployment Guide](DEPLOYMENT.md)** | **🚀 [Sharing Guide](SHARING.md)**
+
+![Human Body Physiology Visualization](https://img.shields.io/badge/Status-Production%20Ready-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue) ![Platform](https://img.shields.io/badge/Platform-Web-orange)
 
 ## Features
 

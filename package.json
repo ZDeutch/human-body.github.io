@@ -20,13 +20,13 @@
     "medical",
     "science"
   ],
-  "author": "Your Name",
+  "author": "Zander Deutch",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/human-body-physiology.git"
+    "url": "https://github.com/ZDeutch/human-body-physiology.git"
   },
-  "homepage": "https://yourusername.github.io/human-body-physiology",
+  "homepage": "https://ZDeutch.github.io/human-body-physiology",
   "engines": {
     "node": ">=14.0.0"
   }

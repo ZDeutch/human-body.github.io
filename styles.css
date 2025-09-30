@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Ensure proper display for GitHub Pages */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -97,6 +103,7 @@ header p {
     grid-template-columns: 300px 1fr 1fr;
     gap: 30px;
     margin-bottom: 30px;
+    min-height: 600px;
 }
 
 /* Organ Selector */
@@ -108,6 +115,7 @@ header p {
     backdrop-filter: blur(10px);
     max-height: 600px;
     overflow-y: auto;
+    min-height: 500px;
 }
 
 .organ-selector h3 {
@@ -172,11 +180,13 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 500px;
 }
 
 #bodySvg {
     max-width: 100%;
     height: auto;
+    min-height: 400px;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
 }
 
@@ -220,6 +230,7 @@ header p {
     backdrop-filter: blur(10px);
     max-height: 600px;
     overflow-y: auto;
+    min-height: 500px;
 }
 
 /* Scientific Tabs */
@@ -1591,11 +1602,13 @@ header p {
 @media (max-width: 1024px) {
     .main-content {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .organ-selector {
         max-height: none;
         order: -1;
+        min-height: auto;
     }
     
     .organ-buttons {
@@ -1617,6 +1630,11 @@ header p {
     
     .parameters-panel {
         max-height: none;
+        min-height: auto;
+    }
+    
+    .body-visualization {
+        min-height: 400px;
     }
 }
 
@@ -1640,14 +1658,20 @@ header p {
     
     .body-visualization {
         padding: 20px;
+        min-height: 350px;
     }
     
     .parameters-panel {
         padding: 20px;
+        min-height: auto;
     }
     
     .info-panel {
         padding: 20px;
+    }
+    
+    .organ-selector {
+        min-height: auto;
     }
 }
 

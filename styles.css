@@ -184,6 +184,7 @@ header p {
 #heart {
     animation: heartbeat 1.2s ease-in-out infinite;
     transform-origin: center;
+    will-change: transform; /* Optimize for animations */
 }
 
 @keyframes heartbeat {
@@ -352,9 +353,11 @@ header p {
     background: #e2e8f0;
     outline: none;
     -webkit-appearance: none;
+    appearance: none;
 }
 
 .timeline-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
@@ -700,10 +703,12 @@ header p {
     background: #e2e8f0;
     outline: none;
     -webkit-appearance: none;
+    appearance: none;
     margin-bottom: 10px;
 }
 
 .env-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
     width: 18px;
     height: 18px;
@@ -1253,6 +1258,7 @@ header p {
     border-radius: 3px;
     transition: width 0.8s ease;
     position: relative;
+    will-change: width; /* Optimize for animations */
 }
 
 .parameter-fill::after {

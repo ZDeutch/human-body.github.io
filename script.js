@@ -1570,6 +1570,13 @@ function init() {
 // Start the application when the page loads
 document.addEventListener('DOMContentLoaded', init);
 
+// Fallback initialization for GitHub Pages
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}
+
 // Remove old hover effects code since we're using organ buttons now
 
 // Add keyboard shortcuts
